@@ -210,7 +210,7 @@ make
 
 每次重新验证的时候还要make一次
 
-![1617099674974](https://raw.githubusercontent.com/ALG-RE/Nep/main/1.png?token=ASIQBNYEDYBA3R3OV5U44FLANGXRQ)
+![1](1.png)
 
 
 

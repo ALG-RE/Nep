@@ -210,7 +210,7 @@ make
 
 每次重新验证的时候还要make一次
 
-![1617099674974](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617099674974.png)
+![1617099674974](C:\Users\86182\Desktop\MD文档\Nep.git\1.png)
 
 
 
@@ -254,7 +254,7 @@ int tmin(void)
 {return 1<<31;}
 ```
 
-![1617104541386](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617104541386.png)
+![1617104541386](C:\Users\86182\Desktop\MD文档\Nep.git\2.png)
 
 
 
@@ -299,7 +299,7 @@ int isTmax(int x)
 {return !((x + x + 2) | !(~x));}
 ```
 
-![1617106600570](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617106600570.png)
+![1617106600570](C:\Users\86182\Desktop\MD文档\Nep.git\3.png)
 
 有一个小例子
 
@@ -335,9 +335,9 @@ bin(int('0xAAAAAAAA',16))=10101010101010101010101010101010
 
 也可以gdb转二进制
 
-![1617163990253](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617163990253.png)
+![1617163990253](C:\Users\86182\Desktop\MD文档\Nep.git\4.png)
 
-构造奇数位都是0偶数位都是1的数![1617169077112](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617169077112.png)
+构造奇数位都是0偶数位都是1的数![1617169077112](C:\Users\86182\Desktop\MD文档\Nep.git\5.png)
 
 然后，我们可以和 x 做按位或运算来得到一个二进制序列 ，因为 0x55555555 的奇数位上都为 0，那么这个方法就可以测试 x 的奇数位上是不是都为 1  如果 x 上有一个奇数位不为 1，那么对应结果上的位上面的值就是 0 ，如果 x 上的奇数位都为 1，那么对应的结果必定是 -1 ，再让他返回1就行了。
 
@@ -348,7 +348,7 @@ int allOddBits(int x)
 {return !(~(x | (0x55 + (0x55 << 8) + (0x55 << 16) + (0x55 << 24))));}
 ```
 
-![1617169715005](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617169715005.png)
+![1617169715005](C:\Users\86182\Desktop\MD文档\Nep.git\6.png)
 
 
 
@@ -382,7 +382,7 @@ int negate(int x)
 {return (~x+1);}
 ```
 
-![1617235205243](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617235205243.png)
+![1617235205243](C:\Users\86182\Desktop\MD文档\Nep.git\7.png)
 
 
 
@@ -404,7 +404,7 @@ int isAsciiDigit(int x) {
 }
 ```
 
-![1617235390360](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617235390360.png)
+![1617235390360](C:\Users\86182\Desktop\MD文档\Nep.git\8.png)
 
 
 
@@ -418,7 +418,7 @@ int isAsciiDigit(int x)
 
 
 
-![1617237808836](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617237808836.png)
+![1617237808836](C:\Users\86182\Desktop\MD文档\Nep.git\9.png)
 
 
 
@@ -454,7 +454,7 @@ return(y & ~a)|(z & a);}
 
 
 
-![1617240982262](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617240982262.png)
+![1617240982262](C:\Users\86182\Desktop\MD文档\Nep.git\10.png)
 
 
 
@@ -486,7 +486,7 @@ return (!(x^y)) | ((x&~y)>>31&1) | ((!((x^y)>>31))&((x+(~y+1))>>31));}
 
 
 
-![1617252985457](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617252985457.png)
+![1617252985457](C:\Users\86182\Desktop\MD文档\Nep.git\11.png)
 
 
 
@@ -528,7 +528,7 @@ int logicalNeg(int x) {
 
 
 
-![1617266788786](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617266788786.png)
+![1617266788786](C:\Users\86182\Desktop\MD文档\Nep.git\12.png)
 
 
 
@@ -588,7 +588,7 @@ int howManyBits(int x) {
 }
 ```
 
-![1617271034134](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617271034134.png)
+![1617271034134](C:\Users\86182\Desktop\MD文档\Nep.git\13.png)
 
 
 
@@ -624,7 +624,7 @@ int exp = (uf&0x7f800000)>>23;
   return (exp<<23)|(uf&0x807fffff);}
 ```
 
-![1617278067040](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617278067040.png)
+![1617278067040](C:\Users\86182\Desktop\MD文档\Nep.git\14.png)
 
 
 
@@ -675,7 +675,7 @@ int floatFloat2Int(unsigned uf) {
 
 
 
-![1617278322252](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617278322252.png)
+![1617278322252](C:\Users\86182\Desktop\MD文档\Nep.git\15.png)
 
 
 
@@ -694,7 +694,7 @@ int exp = x + 127;
   return exp << 23;}
 ```
 
-![1617278537717](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\1617278537717.png)
+![1617278537717](C:\Users\86182\Desktop\MD文档\Nep.git\16.png)
 
 
 

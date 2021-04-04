@@ -254,7 +254,7 @@ int tmin(void)
 {return 1<<31;}
 ```
 
-![1617104541386](https://raw.githubusercontent.com/ALG-RE/Nep/main/2.png?token=ASIQBN76RFBJ3KOEXSAJ5FLANGXXM)
+![1617104541386](2.png)
 
 
 
@@ -299,7 +299,7 @@ int isTmax(int x)
 {return !((x + x + 2) | !(~x));}
 ```
 
-![1617106600570](https://raw.githubusercontent.com/ALG-RE/Nep/main/3.png?token=ASIQBNZMVQJLJWREFIYHVG3ANGX2E)
+![1617106600570](3.png)
 
 有一个小例子
 
@@ -335,7 +335,7 @@ bin(int('0xAAAAAAAA',16))=10101010101010101010101010101010
 
 也可以gdb转二进制
 
-![1617163990253](https://raw.githubusercontent.com/ALG-RE/Nep/main/4.png?token=ASIQBNYOCJZHGVPDYO56UEDANGX4Q)
+![1617163990253](5.png)
 
 构造奇数位都是0偶数位都是1的数![1617169077112](https://raw.githubusercontent.com/ALG-RE/Nep/main/5.png?token=ASIQBN45PNM4XQKFXI2IC7LANGX6W)
 
@@ -348,7 +348,7 @@ int allOddBits(int x)
 {return !(~(x | (0x55 + (0x55 << 8) + (0x55 << 16) + (0x55 << 24))));}
 ```
 
-![1617169715005](https://raw.githubusercontent.com/ALG-RE/Nep/main/6.png?token=ASIQBNYRYOSSI3R3JUGUAJ3ANGYCA)
+![1617169715005](6.png)
 
 
 
@@ -382,7 +382,7 @@ int negate(int x)
 {return (~x+1);}
 ```
 
-![1617235205243](https://raw.githubusercontent.com/ALG-RE/Nep/main/7.png?token=ASIQBN4D54VCKQMLSHYUFH3ANGYE2)
+![1617235205243](7.png)
 
 
 
@@ -404,7 +404,7 @@ int isAsciiDigit(int x) {
 }
 ```
 
-![1617235390360](https://raw.githubusercontent.com/ALG-RE/Nep/main/8.png?token=ASIQBN5563A4K3F7TVY2JYTANGYIA)
+![1617235390360](8.png)
 
 
 
@@ -418,7 +418,7 @@ int isAsciiDigit(int x)
 
 
 
-![1617237808836](https://raw.githubusercontent.com/ALG-RE/Nep/main/9.png?token=ASIQBN4V3DKTDJ7AL5AWGUTANGYKK)
+![1617237808836](9.png)
 
 
 
@@ -454,7 +454,7 @@ return(y & ~a)|(z & a);}
 
 
 
-![1617240982262](https://raw.githubusercontent.com/ALG-RE/Nep/main/10.png?token=ASIQBN3DBIRAXHBULIV2WILANGYMK)
+![1617240982262](10.png)
 
 
 
@@ -486,7 +486,7 @@ return (!(x^y)) | ((x&~y)>>31&1) | ((!((x^y)>>31))&((x+(~y+1))>>31));}
 
 
 
-![1617252985457](https://raw.githubusercontent.com/ALG-RE/Nep/main/11.png?token=ASIQBNYF2XKXSM5WDASV2ZDANGYN4)
+![1617252985457](11.png)
 
 
 
@@ -528,7 +528,7 @@ int logicalNeg(int x) {
 
 
 
-![1617266788786](https://raw.githubusercontent.com/ALG-RE/Nep/main/12.png?token=ASIQBN66T745YECXRGGACQLANGYQE)
+![1617266788786](12.png)
 
 
 
@@ -588,7 +588,7 @@ int howManyBits(int x) {
 }
 ```
 
-![1617271034134](https://raw.githubusercontent.com/ALG-RE/Nep/main/13.png?token=ASIQBN6STHJTF5GUJ5SZRJ3ANGYSC)
+![1617271034134](13.png)
 
 
 
@@ -624,7 +624,7 @@ int exp = (uf&0x7f800000)>>23;
   return (exp<<23)|(uf&0x807fffff);}
 ```
 
-![1617278067040](https://raw.githubusercontent.com/ALG-RE/Nep/main/14.png?token=ASIQBNZR2XUG3AZNPGRHQJLANGYT4)
+![1617278067040](14.png)
 
 
 
@@ -675,7 +675,7 @@ int floatFloat2Int(unsigned uf) {
 
 
 
-![1617278322252](https://raw.githubusercontent.com/ALG-RE/Nep/main/15.png?token=ASIQBN5ML2RDPU4CQFDCZ73ANGYVU)
+![1617278322252](15.png)
 
 
 
@@ -694,7 +694,7 @@ int exp = x + 127;
   return exp << 23;}
 ```
 
-![1617278537717](https://raw.githubusercontent.com/ALG-RE/Nep/main/16.png?token=ASIQBN3X4WYBMKLWYSWJCYTANGYXO)
+![1617278537717](16.png)
 
 
 

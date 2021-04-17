@@ -45,7 +45,7 @@ JBE 前小于等于 Jump if less or equal
 
 
 
-![1617955004199](17.png)
+![1617955004199](/wp-content/uploads/2021/04/17.png)
 
 
 
